@@ -4,15 +4,35 @@
 }
 
 .container {
-    padding: 20px;
+    padding: 40px 30px;
     text-align: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .heading {
-    font-family: 'Ethnocentric Rg', sans-serif !important;
+    font-family: 'Ethnocentric Rg', sans-serif;
     background-color: #7518d1;
     background-clip: text;
     color: transparent;
     font-size: 2.2rem;
     font-weight: bold;
+    max-width: 550px;
+    margin: auto;
+    line-height: 4rem;
+}
+
+.container .heading:first-child{
+    background-color: #18aad1;
+    background-clip: text;
+    color: transparent;
+}
+
+.heading span{
+    background-color: #18aad1;
+    background-clip: text;
+    color: transparent;
 }

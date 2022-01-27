@@ -15,8 +15,6 @@ html {
 }
 
 body {
-  padding: 0;
-  margin: 0;
   background-color: #F2F6FC;
   font-family: 'Montserrat', sans-serif;
 }
@@ -24,4 +22,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
