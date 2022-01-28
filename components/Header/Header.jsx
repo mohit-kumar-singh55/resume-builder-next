@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <p className={styles.heading}>Resume.MKS</p>
+                <h1 className={styles.heading}>Resume.MKS</h1>
                 <p className={styles.heading}>Make your resume easily.<span>It&apos;s free</span></p>
             </div>
             <div className={styles.right}>

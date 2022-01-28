@@ -1,0 +1,38 @@
+.container {
+    min-width: 550px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.12);
+    overflow-x: auto;
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    box-shadow: 1px 0 4px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header .section {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header .active {
+    border-bottom: 2px solid #7518d1;
+    color: #7518d1;
+}
+
+.body{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
