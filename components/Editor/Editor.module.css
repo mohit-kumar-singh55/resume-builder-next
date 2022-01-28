@@ -1,6 +1,5 @@
 .container {
-    min-width: 550px;
-    max-width: 750px;
+    max-width: 800px;
     min-height: 450px;
     display: flex;
     flex-direction: column;
@@ -22,13 +21,13 @@
 
 .header::-webkit-scrollbar-thumb {
     border-radius: 20px;
-    background-color: #c7c7c7;
+    background-color: #7518d1;
 }
 
 .header .section {
     padding: 10px;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-bottom: 2px solid transparent;
     white-space: nowrap;
     cursor: pointer;
@@ -50,11 +49,13 @@
 .detail {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .detail .row {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -76,7 +77,7 @@
 }
 
 .chips .new {
-    color: #239ce2;
+    color: #18aad1;
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
@@ -87,9 +88,9 @@
     gap: 5px;
     align-items: center;
     padding: 4px 8px;
-    background-color: #808080;
+    background-color: #7518d1;
     border-radius: 20px;
-    cursor: default;
+    cursor: pointer;
 }
 
 .chip p {
@@ -106,14 +107,14 @@
 }
 
 .chips .active {
-    background-color: #239ce2;
+    background-color: #18aad1;
 }
 
 .body button {
     width: fit-content;
     padding: 8px 16px;
     border-radius: 5px;
-    background-color: #239ce2;
+    background-color: #7518d1;
     color: #fff;
     outline: none;
     border: none;
@@ -124,9 +125,63 @@
     gap: 5px;
     align-items: center;
     cursor: pointer;
-    transition: 200ms;
+    transition: 0.3s;
+}
+
+.body button:hover{
+    background-color: #18aad1;
 }
 
 .body button:active {
     transform: translateY(2px);
+}
+
+/* media Queries */
+
+@media screen and (max-width:800px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container {
+        max-width: 320px;
+    }
 }

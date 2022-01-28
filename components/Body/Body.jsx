@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowDown } from 'react-feather';
 import Editor from '../Editor/Editor';
 import styles from "./Body.module.css";
@@ -69,7 +69,7 @@ function Header() {
                 <button>Download<ArrowDown /></button>
             </div>
             <div className={styles.main}>
-                <Editor sections={sections} />
+                <Editor sections={sections} information={resumeInformation} setInformation={setResumeInformation} />
             </div>
         </div>
     );
