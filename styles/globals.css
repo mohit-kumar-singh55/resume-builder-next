@@ -28,4 +28,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
 }

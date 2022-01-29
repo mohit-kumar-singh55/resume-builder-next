@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { ArrowDown } from 'react-feather';
 import Editor from '../Editor/Editor';
+import Resume from '../Resume/Resume';
 import styles from "./Body.module.css";
 
 function Header() {
     const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
+
+    const resumeRef = useRef();
+
+    const [activeColor, setActiveColor] = useState(colors[0]);
 
     const sections = {
         basicInfo: "Basic Info",
@@ -62,7 +67,7 @@ function Header() {
                 <div className={styles.colors}>
                     {
                         colors.map((color) => (
-                            <span className={styles.color} key={color} style={{ backgroundColor: color }} />
+                            <span className={`${styles.color} ${activeColor === color ? styles.active : ""}`} key={color} style={{ backgroundColor: color }} onClick={() => setActiveColor(color)} />
                         ))
                     }
                 </div>
@@ -70,6 +75,7 @@ function Header() {
             </div>
             <div className={styles.main}>
                 <Editor sections={sections} information={resumeInformation} setInformation={setResumeInformation} />
+                <Resume ref={resumeRef} sections={sections} information={resumeInformation} activeColor={activeColor} />
             </div>
         </div>
     );
