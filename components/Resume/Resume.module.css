@@ -56,6 +56,7 @@
 .main {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .col1 {
@@ -155,22 +156,40 @@
 }
 
 /* MQ */
+@media screen and (max-width:450px) {
+    .header .heading {
+        font-size: 1.8rem;
+    }
+
+    /* .main {
+        flex-wrap: wrap;
+    } */
+}
+
 @media screen and (max-width:375px) {
     .upperContainer {
         max-width: 350px;
     }
 
-    .section .sectionTitle{
-        font-size: 1rem;
-    }
+    /* .section .sectionTitle {
+        font-size: 1.2rem;
+    } */
 
     .header .heading {
         font-size: 1.5rem;
     }
+
+    /* .main {
+        flex-wrap: wrap;
+    } */
 }
 
 @media screen and (max-width:320px) {
     .upperContainer {
         max-width: 320px;
     }
+
+    /* .main {
+        flex-wrap: wrap;
+    } */
 }
