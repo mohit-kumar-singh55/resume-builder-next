@@ -20,8 +20,8 @@
 }
 
 .header .heading {
-    font-size: 2.7rem;
-    font-weight: 500;
+    font-size: 2.2rem;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
@@ -152,4 +152,25 @@
 
 .hidden {
     display: none;
+}
+
+/* MQ */
+@media screen and (max-width:375px) {
+    .upperContainer {
+        max-width: 350px;
+    }
+
+    .section .sectionTitle{
+        font-size: 1rem;
+    }
+
+    .header .heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .upperContainer {
+        max-width: 320px;
+    }
 }
