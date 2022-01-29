@@ -63,15 +63,14 @@ const Resume = forwardRef((props, ref) => {
                             )}
                             {item.startDate && item.endDate ? (
                                 <div className={styles.date}>
-                                    <Calendar /> {getFormattedDate(item.startDate)}-
-                                    {getFormattedDate(item.endDate)}
+                                    <Calendar /> {getFormattedDate(item.startDate)} - {getFormattedDate(item.endDate)}
                                 </div>
                             ) : (
                                 <div />
                             )}
                             {item.location ? (
                                 <p className={styles.date}>
-                                    <MapPin /> Remote
+                                    <MapPin /> {item.location}
                                 </p>
                             ) : (
                                 <span />
@@ -168,14 +167,13 @@ const Resume = forwardRef((props, ref) => {
                                 <span />
                             )}
                             {item.college ? (
-                                <p className={styles.subTitle}>Some college name</p>
+                                <p className={styles.subTitle}>{item.college}</p>
                             ) : (
                                 <span />
                             )}
                             {item.startDate && item.endDate ? (
                                 <div className={styles.date}>
-                                    <Calendar /> {getFormattedDate(item.startDate)} -
-                                    {getFormattedDate(item.endDate)}
+                                    <Calendar /> {getFormattedDate(item.startDate)} - {getFormattedDate(item.endDate)}
                                 </div>
                             ) : (
                                 ""
