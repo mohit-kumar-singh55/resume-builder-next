@@ -54,7 +54,7 @@ const Resume = forwardRef((props, ref) => {
                                 <span />
                             )}
                             {item.certificationLink ? (
-                                <a className={styles.link} href={item.certificationLink}>
+                                <a className={styles.link} href={item.certificationLink} target="blank" rel="noreferrer">
                                     <Paperclip />
                                     {item.certificationLink}
                                 </a>
@@ -110,7 +110,7 @@ const Resume = forwardRef((props, ref) => {
                                 <span />
                             )}
                             {item.link ? (
-                                <a className={styles.link} href={item.link}>
+                                <a className={styles.link} href={item.link} target="blank" rel="noreferrer">
                                     <Paperclip />
                                     {item.link}
                                 </a>
@@ -118,7 +118,7 @@ const Resume = forwardRef((props, ref) => {
                                 <span />
                             )}
                             {item.github ? (
-                                <a className={styles.link} href={item.github}>
+                                <a className={styles.link} href={item.github} target="blank" rel="noreferrer">
                                     <GitHub />
                                     {item.github}
                                 </a>
@@ -299,28 +299,28 @@ const Resume = forwardRef((props, ref) => {
 
                     <div className={styles.links}>
                         {info.basicInfo?.detail?.email ? (
-                            <a className={styles.link} type="email">
+                            <a className={styles.link} href={`mailto:${info.basicInfo?.detail?.email}`}>
                                 <AtSign /> {info.basicInfo?.detail?.email}
                             </a>
                         ) : (
                             <span />
                         )}
                         {info.basicInfo?.detail?.phone ? (
-                            <a className={styles.link}>
+                            <a className={styles.link} href={`tel:${info.basicInfo?.detail?.phone}`}>
                                 <Phone /> {info.basicInfo?.detail?.phone}
                             </a>
                         ) : (
                             <span />
                         )}
                         {info.basicInfo?.detail?.linkedin ? (
-                            <a className={styles.link}>
+                            <a className={styles.link} target="blank" href={info.basicInfo?.detail?.linkedin} rel="noreferrer">
                                 <Linkedin /> {info.basicInfo?.detail?.linkedin}
                             </a>
                         ) : (
                             <span />
                         )}
                         {info.basicInfo?.detail?.github ? (
-                            <a className={styles.link}>
+                            <a className={styles.link} target="blank" href={info.basicInfo?.detail?.github} rel="noreferrer">
                                 <GitHub /> {info.basicInfo?.detail?.github}
                             </a>
                         ) : (
