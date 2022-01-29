@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ArrowDown } from 'react-feather';
+import ReactToPrint from "react-to-print";
 import Editor from '../Editor/Editor';
 import Resume from '../Resume/Resume';
 import styles from "./Body.module.css";
@@ -71,7 +72,14 @@ function Header() {
                         ))
                     }
                 </div>
-                <button>Download<ArrowDown /></button>
+                <ReactToPrint
+                    trigger={() => {
+                        return (
+                            <button>Download<ArrowDown /></button>
+                        )
+                    }}
+                    content={() => resumeRef.current}
+                />
             </div>
             <div className={styles.main}>
                 <Editor sections={sections} information={resumeInformation} setInformation={setResumeInformation} />

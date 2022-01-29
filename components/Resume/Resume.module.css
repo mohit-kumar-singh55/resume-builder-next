@@ -1,6 +1,6 @@
 .upperContainer {
     max-width: 800px;
-    min-height: 800px;
+    min-height: 700px;
     flex: 1;
     box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.12);
     height: fit-content;

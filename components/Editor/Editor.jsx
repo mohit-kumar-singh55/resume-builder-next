@@ -32,7 +32,7 @@ function Editor(props) {
             <div className={styles.row}>
                 <InputControl
                     label="Title"
-                    placeholder="Enter title eg. Frontend developer"
+                    placeholder="Enter title eg. Graphic Designer"
                     value={values.title}
                     onChange={(event) =>
                         setValues((prev) => ({ ...prev, title: event.target.value }))
@@ -234,7 +234,7 @@ function Editor(props) {
                 <InputControl
                     label="Title"
                     value={values.title}
-                    placeholder="Enter your title eg. Frontend developer"
+                    placeholder="Enter your title eg. Graphic Designer"
                     onChange={(event) =>
                         setValues((prev) => ({ ...prev, title: event.target.value }))
                     }
