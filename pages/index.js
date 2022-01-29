@@ -10,6 +10,7 @@ export default function Home() {
         <title>Free and Quick Resume Builder - Resume.MKS</title>
         <meta name="description" content="A quick and free resume builder. So build your resume quickly, easily and for free." />
         <meta httpEquiv='content-language' content='en-gb'></meta>
+        <meta name="google-site-verification" content="lh7ARYc9HW3MOvB_7blCI7eh2-cs3EuVbHrH6N3B5Q4" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
