@@ -7,9 +7,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Resume.MKS</title>
+        <title>Free and Quick Resume Builder - Resume.MKS</title>
         <meta name="description" content="A quick and free resume builder. So build your resume quickly, easily and for free." />
-        <link rel="icon" href="/favicon.ico" />
+        <meta httpEquiv='content-language' content='en-gb'></meta>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="app">
