@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://resumety.netlify.app/sitemap.xml
