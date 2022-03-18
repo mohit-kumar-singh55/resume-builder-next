@@ -60,11 +60,6 @@ function Header() {
         },
     });
 
-    // saving in local storage
-    useEffect(() => {
-        localStorage.setItem('resume', JSON.stringify(resumeInformation))
-    }, [resumeInformation])
-
 
     return (
         <div className={styles.container}>
