@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { ArrowDown } from 'react-feather';
 import ReactToPrint from "react-to-print";
 import Editor from '../Editor/Editor';
@@ -59,6 +59,11 @@ function Header() {
             detail: "",
         },
     });
+
+    // saving in local storage
+    useEffect(() => {
+        localStorage.setItem('resume', JSON.stringify(resumeInformation))
+    }, [resumeInformation])
 
 
     return (
