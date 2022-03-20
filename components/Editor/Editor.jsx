@@ -260,6 +260,7 @@ function Editor(props) {
             </div>
             <div className={styles.row}>
                 <InputControl
+                    type={"email"}
                     label="Email"
                     value={values.email}
                     placeholder="Enter your email"
@@ -268,6 +269,7 @@ function Editor(props) {
                     }
                 />
                 <InputControl
+                    type={"number"}
                     label="Enter phone"
                     value={values.phone}
                     placeholder="Enter your phone number"
